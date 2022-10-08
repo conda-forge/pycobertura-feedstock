@@ -18,15 +18,16 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.7
     - setuptools-git
     - pip
   run:
-    - python >=3.6
+    - python >=3.7
     - click >=4.0
     - jinja2
     - lxml
     - tabulate
+    - ruamel.yaml
 
 test:
   imports:
@@ -41,7 +42,7 @@ about:
   home: https://github.com/aconrad/pycobertura
   summary: A Cobertura coverage parser that can diff reports and show coverage progress.
   license: MIT
-  license_file: LICENSE.txt
+  license_file: LICENSE
 
 extra:
   recipe-maintainers:
