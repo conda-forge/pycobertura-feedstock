@@ -1,5 +1,5 @@
 {% set name = "pycobertura" %}
-{% set version = "2.1.0" %}
+{% set version = "3.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pycobertura-{{ version }}.tar.gz
-  sha256: cbf96522ae7a397b25ea57410c29bdd3f0e71b138a661bb8f3b8404a51ffe03f
+  sha256: 2fd51ce267e59d082004ef049f2fefc4babce92cf6579b0dec03d0c65752b82f
 
 build:
   entry_points:
