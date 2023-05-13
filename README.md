@@ -1,11 +1,11 @@
-About pycobertura
-=================
+About pycobertura-feedstock
+===========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pycobertura-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/aconrad/pycobertura
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pycobertura-feedstock/blob/main/LICENSE.txt)
 
 Summary: A Cobertura coverage parser that can diff reports and show coverage progress.
 
