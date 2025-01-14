@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pycobertura-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pycobertura-{{ version }}.tar.gz
   sha256: 34019472da9fcf5ebf33dbb47829d4ab953bcfdfdf42f02b0cebcee4b18e48bf
 
 build:
@@ -14,15 +14,15 @@ build:
     - pycobertura=pycobertura.cli:pycobertura
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.7
+    - python {{ python_min }}
     - setuptools-git
     - pip
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - click >=4.0
     - jinja2
     - lxml
@@ -37,6 +37,7 @@ test:
     - pycobertura --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/aconrad/pycobertura
