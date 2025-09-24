@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: pycobertura
-  version: 4.0.0
+  version: "4.1.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/pycobertura-${{ version }}.tar.gz
-  sha256: 7b6dc26e958b6498337c683297310652ad9e40ce9b6ce1f1d013a7bae43363c9
+  sha256: 9a8957ef35c1201ab05188c0baa2a8c08b7800b6336d5aef073b116ac449674d
 
 build:
   number: 0
